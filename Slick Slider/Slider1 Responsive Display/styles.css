@@ -1,0 +1,16 @@
+.slick-slider {
+  width: 100%; /* Set width to 100% */
+  max-width: 800px; /* Set maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Styling for the slides */
+.slick-slider div {
+  text-align: center; /* Center align the content */
+}
+
+/* Styling for the images inside the slides */
+.slick-slider img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}

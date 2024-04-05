@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Question 1: Grade Calculator
+Write a JavaScript program that asks for a student's score (0-100) and calculates the grade based on the score:
+- A: 90 and above
+- B: 80 to 89
+- C: 70 to 79
+- D: 60 to 69
+- F: Below 60 -->
+<!-- 
+<script>
+let score = parseInt(prompt("Enter the student's score (0-100):"));
+if ( score >= 0 && score <= 100) {
+    if (score >= 90) {
+        document.write("The student's grade is: A");
+    } else if (score >= 80) {
+        document.write("The student's grade is: B");
+    } else if (score >= 70) {
+        document.write("The student's grade is: C");
+    } else if (score >= 60) {
+        document.write("The student's grade is: D");
+    } else {
+        document.write("The student's grade is: F");
+    }
+} else {
+   document.write('Invalid score. Please enter a number between 0 and 100.');
+}
+</script> -->
+
+ <!-- Question 2: Simple Authentication System
+Create a simple JavaScript program that simulates a login system. Ask for a username and password. If the username is "admin" and the password is "12345", show a welcome message. Otherwise, display an error message. Consider different error messages for wrong username and wrong password. -->
+
+<!-- <script>
+    let username = prompt("Enter your username:");
+    if (username === "admin") {
+        document.write("Welcome, admin!");
+        let password = prompt("Enter your password:");
+        if (password === "12345") {
+            document.write(" Correct password. Redirecting to another page...");
+            window.location.href = "open_new_page.html";
+        } else {
+            document.write(" Incorrect password. Please try again.");
+        }
+    } else {
+        document.write("Incorrect username. Please try again.");
+    }
+</script>
+ -->
+
+ <!-- Question 3:User Ticket Pricing System
+ Write a JavaScript program that calculates ticket prices based on age:
+ - Children under 5: Free
+ - Age 5 to 12: $10
+ - Age 13 to 60: $20
+ - Seniors above 60: $15
+ Ask for the age and display the ticket price accordingly. -->
+
+<!-- <script>
+let age = parseInt(prompt("Enter your age:"));
+
+let ticketPrice;
+
+if (age < 5) {
+    ticketPrice = "Free";
+} else if (age >= 5 && age <= 12) {
+    ticketPrice = "$10";
+} else if (age >= 13 && age <= 60) {
+    ticketPrice = "$20";
+} else {
+    ticketPrice = "$15";
+}
+
+document.write(`The ticket price for age ${age} is ${ticketPrice}.`);
+
+</script> -->
+<!-- 
+
+Question 4: Simple Calculator
+Create a JavaScript program that acts as a simple calculator. It should first ask for an operation to perform (add, subtract, multiply, divide) and then ask for two numbers. Perform the operation on those two numbers. Use a nested `if` to first validate the operation and then calculate the result if the operation is valid. -->
+
+    <!-- <script>
+        let operation = prompt("Enter the operation to perform (add, subtract, multiply, divide):");
+
+        if (operation === "+" || operation === "-" || operation === "*" || operation === "/") {
+            let num1 = parseInt(prompt("Enter the first number:"));
+            let num2 = parseInt(prompt("Enter the second number:"));
+
+            let result;
+            if (operation === "+") {
+                result = num1 + num2;
+                document.write(`The result of ${num1} ${operation} ${num2} is: ${result}`);
+
+            } else if (operation === "-") {
+                result = num1 - num2;
+                document.write(`The result of ${num1} ${operation} ${num2} is: ${result}`);
+
+            } else if (operation === "*") {
+                result = num1 * num2;
+                document.write(`The result of ${num1} ${operation} ${num2} is: ${result}`);
+
+            } else if (operation === "/") {
+                if (num2 !== 0) {
+                    result = num1 / num2;
+                    document.write(`The result of ${num1} ${operation} ${num2} is: ${result}`);
+
+                } else {
+                    document.write("Error: Division by zero!");
+                }
+            }
+        } else {
+            document.write("Invalid operation. Please enter a valid operator.");
+        }
+    </script> -->
+
+<!-- 
+ Question 5:Discount System Based on Purchase Amount
+Write a program that asks for the total purchase amount and applies a discount based on the amount:
+- No discount for purchases below $100.
+- 5% discount for purchases from $100 to $499.
+- 10% discount for purchases from $500 to $999.
+- 15% discount for purchases $1000 and above.
+Calculate and display the final price after discount. Use nested `if` statements to check the ranges and apply discounts. -->
+
+
+<script>
+let purchaseAmount = parseInt(prompt("Enter the total purchase amount: $"));
+let finalPrice;
+
+if (purchaseAmount < 100) {
+    finalPrice = purchaseAmount;
+} else if (purchaseAmount >= 100 && purchaseAmount < 500) {
+    finalPrice = purchaseAmount * 0.95; // 5% discount
+} else if (purchaseAmount >= 500 && purchaseAmount < 1000) {
+    finalPrice = purchaseAmount * 0.9; // 10% discount
+} else {
+    finalPrice = purchaseAmount * 0.85; // 15% discount
+}
+
+console.log("Final price after discount: $" + finalPrice);
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+</body>
+</html>
